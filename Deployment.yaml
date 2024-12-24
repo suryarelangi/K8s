@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: suryarelangi/repo1
+          image: suryarelangi/repo1:bike
           ports:
             - containerPort: 80
