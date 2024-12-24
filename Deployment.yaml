@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      page: bike
+  template:
+    metadata:
+      labels:
+        page: bike
+    spec:
+      containers:
+        - name: cont1
+          image: suryarelangi/repo1
+          ports:
+            - containerPort: 80
